@@ -15,6 +15,20 @@
     Minima, modi, magnam vero reiciendis in ipsa eligendi fugit 
     optio libero assumenda dolores sequi.
 </div>
+<br>
+@for ($i = 0; $i < 10; $i++)
+
+    {{-- se inserisci qualche comando sbagliato, vieni rimandato alla pagina browser log per gli errori 
+    in questo caso, loop non è definito (undefined), inoltre se commentato nella maniera classica HTML 
+    non viene bloccato, bisogna commentarlo nella maniera specifica di blade --}}
+
+    {{-- @if ($loop->first)
+        This is the first iteration.
+    @endif --}}
+
+   <div>VALORE NUMERO: {{ $i }} </div> 
+
+@endfor
     
 </body>
 </html>
